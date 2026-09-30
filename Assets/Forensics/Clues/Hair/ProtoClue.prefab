@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2130229575886227740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3182276405981713966}
+  - component: {fileID: 4330909241028135794}
+  - component: {fileID: 3186606589034747773}
+  - component: {fileID: 4463553673043817137}
+  - component: {fileID: 3509499526873684030}
+  - component: {fileID: 904099584475477088}
+  - component: {fileID: 1821073413058480256}
+  m_Layer: 0
+  m_Name: ProtoClue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4330909241028135794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2389718, y: -5.410427, z: 14.990329}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2800774949898904647}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3186606589034747773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0065df3bd3cb2040af4dd79886f477f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueId: hair
+  description: Pinch the strand directly and turn it around to inspect its other
+    side.
+  inspectionEulerOffset: {x: 0, y: 180, z: 0}
+  inspectionScaleMultiplier: 1.5
+  closeWhenClickedDuringInspection: 0
+  returnToHidingSpotWhenClosed: 1
+  acceptedItemIds: []
+  completeWhenCorrectItemIsUsed: 1
+  completeWhenFirstInspected: 0
+  completionPreviewSeconds: 1.5
+  onFound:
+    m_PersistentCalls:
+      m_Calls: []
+  onInspectionStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInspectionEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onCorrectItemUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  onWrongItemUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  turnThresholdDegrees: 165
+--- !u!114 &4463553673043817137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &3509499526873684030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 0}
+  manipulationType: 1
+  twoHandedManipulationType: 7
+  allowFarManipulation: 0
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 0
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 0
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 0}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &904099584475477088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08, y: 0.08, z: 0.13999939}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1821073413058480256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
+--- !u!1001 &2401791372495684524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4330909241028135794}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0004289003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0004289003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0004289003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.008729935
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0085811615
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f6cbc3b5b3c5f8d458436214c95eff02, type: 2}
+    - target: {fileID: 919132149155446097, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+      propertyPath: m_Name
+      value: HairModel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+--- !u!4 &2800774949898904647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a4e8d12ae46e3fe4dbf8eebfeb6e1044, type: 3}
+  m_PrefabInstance: {fileID: 2401791372495684524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3182276405981713966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130229575886227740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7c37c0a2e541e4b370c663a072cd48, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  focusEnabled: 1
+  prefab: {fileID: 1083549605185280, guid: dd20c24561d1abe48a43267e410cf59a, type: 3}
+  tooltipToggleAction:
+    id: 0
+    description: None
+    axisConstraint: 0
+  appearType: 0
+  vanishType: 0
+  remainType: 1
+  appearDelay: 0
+  vanishDelay: 0
+  lifetime: 6
+  keepWorldRotation: 1
+  settingsMode: 1
+  showBackground: 1
+  showOutline: 0
+  showConnector: 1
+  followType: 2
+  pivotMode: 1
+  pivotDirection: 1
+  pivotDirectionOrient: 1
+  manualPivotDirection: {x: 0, y: 1, z: 0}
+  manualPivotLocalPosition: {x: 0, y: 0.13, z: 0}
+  pivotDistance: 0.13
+  toolTipText: Pinch the strand directly and turn it over 180 degrees.
+  anchor: {fileID: 0}
+  showOnlyOncePerClue: 1
